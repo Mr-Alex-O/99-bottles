@@ -1,16 +1,10 @@
+import SearchBar from '../containers/searchbar';
 import React, { Component } from 'react';
-import SearchBar from './searchbar';
-import BeerTable from './beer-table';
+import BreweryList from '../containers/brewery-list';
 
 class HomePage extends Component {
 
-  onSubmit(values) {
-    console.log(values);
-  }
-
   render() {
-
-
     return(
       <div id="container">
         <div className="Header">
@@ -19,7 +13,7 @@ class HomePage extends Component {
             breweries your heart but mostly you liver can handle.</p>
         </div>
         <SearchBar />
-        <BeerTable />
+        <BreweryList />
       </div>
     )
   }

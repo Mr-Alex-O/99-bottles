@@ -35,13 +35,15 @@
     "cors": "^2.8.4",
     "express": "^4.15.3",
     "lodash": "^3.10.1",
+    "nodemon": "^1.11.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "4.3.0",
     "react-router": "^2.0.1",
     "react-router-dom": "^4.1.2",
     "redux": "^3.0.4",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "util": "^0.10.3"
   },
   "bugs": {
     "url": "https://github.com/StephenGrider/ReduxSimpleStarter/issues"

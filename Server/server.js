@@ -3,7 +3,7 @@ const request = require('request');
 const app = express();
 const util = require('util');
 var cors = require('cors')
-const API_KEY = '';
+const API_KEY = '53c34a34f0a5f02c55409dc00e19e304';
 const ROOT_URL = 'http://api.brewerydb.com/v2/';
 
 app.use(cors());

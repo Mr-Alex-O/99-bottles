@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { getBeer } from '../actions/index';
+import { getBreweries } from '../actions/index';
 
 class SearchBar extends Component {
   constructor(props){
     super(props);
 
     this.state = {
-                  city: '',
-                  state: ''
+                  city: 'orlando',
+                  state: 'florida'
                 };
 
     this.onCityChange = this.onCityChange.bind(this);
@@ -28,12 +28,11 @@ class SearchBar extends Component {
   onFormSubmit(event) {
   event.preventDefault();
   console.log(`City: ${this.state.city} State: ${this.state.state}`)
-  this.props.getBeer(this.state.city, this.state.state);
-  this.setState({
-                  city: '',
-                  state: ''
-                });
-
+  this.props.getBreweries(this.state.city, this.state.state);
+  // this.setState({
+  //                 city: '',
+  //                 state: ''
+  //               });
 }
 
   render() {
@@ -60,7 +59,7 @@ class SearchBar extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ getBeer }, (dispatch));
+  return bindActionCreators({ getBreweries }, (dispatch));
 }
 
 export default connect(null, mapDispatchToProps)(SearchBar)

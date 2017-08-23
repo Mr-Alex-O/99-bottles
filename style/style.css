@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  height: 100%;
+}
+
+table th.text-center, table td.text-center {
+    text-align: center;
+    line-height: 2.5ex;
+    height: 5ex; /* 2.5ex for each visible line */
+    overflow: hidden;
+}
+
+td {
+  vertical-align: middle;
+  line-height: 2.5ex;
+  height: 7ex; /* 2.5ex for each visible line */
+  overflow: hidden;
+}
+
+.container-fluid {
+  border: 1px solid gray;
+}
+
+.logo {
+  padding: 2em;
+}
+
+.no-image {
+  margin: auto;
+  vertical-align: middle;
+  border: 1px solid red;
+}
+
+.brewery-details {
+  padding: 2em;
+  margin: auto;
+  height: 100%;
+}
+
+.brewery-website {
+  padding: 2em;
+  margin: auto;
+  height: 100%;
+}
